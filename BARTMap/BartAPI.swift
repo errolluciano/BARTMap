@@ -9,9 +9,10 @@
 import Foundation
 import CoreData
 
-enum Method: String {
+enum Method: String{
     case depart = "depart"
     case arrive = "arrive"
+    case fare = "fare"
 }
 
 struct BartAPI {
