@@ -11,6 +11,7 @@ import CoreData
 
 enum Method: String {
     case depart = "depart"
+    case arrive = "arrive"
 }
 
 struct BartAPI {
