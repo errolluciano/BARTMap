@@ -17,12 +17,13 @@ enum Command: String {
 
 struct BartAPI {
     
-    private static let baseURLString = "http://api.bart.gov/api/sched.aspx"
+    private static let hostURLString = "http://api.bart.gov/api/"
+    private static let pathURLString = "sched.aspx"
     private static let apiKey = "MW9S-E7SL-26DU-VV8V"
     
     private static func flickrURL(command: Command, parameters: [String: String]?) -> URL {
         
-        var components = URLComponents(string: baseURLString)!
+        var components = URLComponents(string: hostURLString)!
         
         var queryItems = [URLQueryItem]()
         
